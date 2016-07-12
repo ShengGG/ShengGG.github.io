@@ -1,20 +1,23 @@
 ---
-layout: post
-title: 飞车
-tags: 新闻
-Description: 我的description
-category: 新闻
+layout: index
 ---
-“下水堵溃口的，都是老百姓自己的卡车，他们都是街上临时征用来的。司机都很朴实，没有一个人拒绝，但紧张肯定是有的。也有人受了伤。”
 
-　　对话人物：
+<article id="post__content">
+  <h1 id="post__title" data-identifier="{{ page.date | date: "%Y%m%d" }}">{{ page.title }}</h1>
+  {{ content }}
+</article> <!-- end #post__content -->
 
-　　华容县防汛办主任张志宏，男，54岁，从事防洪工作31年。
+<div id="post__share">
+  <a id="icon-twitter" class="fontello" href="https://twitter.com/intent/tweet?url=place_your_url_here{{ page.url }}&text={{ page.title }}" target="_blank"></a>
+  <a id="icon-cc" class="fontello" href="http://creativecommons.org/licenses/by-nc-sa/3.0" target="_blank"></a>
+  <a id="icon-weibo" class="fontello" href="http://v.t.sina.com.cn/share/share.php?url=place_your_url_here{{ page.url }}&title={{ page.title }}" target="_blank"></a>
+</div> <!-- end #post__share -->
 
-　　对话动机：
+<div id="disqus_thread">
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink" target="_blank">Loading Disqus comments...</a>
+</div> <!-- end #disqus_thread -->
 
-　　10日10时57分，湖南省华容县新华垸发生溃口，垸内顿成泽国，沿线房屋均进水被淹，救援中出现惊心一幕：十几辆满载麻石的卡车在大堤两边一字排开，连车带石，驶入溃口，堵住滚滚洪流。
+<p id="copyright">Powered by <a href="http://jekyllrb.com" target="_blank">Jekyll</a>&nbsp;&nbsp;|&nbsp;&nbsp;Theme <a href="https://github.com/P233/3-Jekyll" target="_blank">3-Jekyll</a></p>
 
-　　现场照片，引发热议。有人为“卡车敢死队”感动，有人则认为这是置人的生命于险境，以牺牲精神绑架科学抢险。
 
-　　作为“沉车裹头”的决策者之一，张志宏在11日深夜接受了剥洋葱的专访。
